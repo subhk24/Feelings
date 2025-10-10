@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page 10 - Category Boxes</title>
+  <style>
+    /* General Page Styling */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://i.pinimg.com/736x/14/4b/b1/144bb1901b7acbb48c056928f1adc140.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Container layout */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 90%;
+      max-width: 1200px;
+      margin-top: 40px;
+    }
+
+    /* Card styling */
+    .card {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 20px;
+      color: #008037;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: white;
+      font-weight: 500;
+      margin: 30px 0 10px;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    /* Optional Heading */
+    h1 {
+      color: #ffffff;
+      text-shadow: 2px 2px 5px black;
+      margin-top: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1><u>Click and Open when :</u></h1>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/9f/f1/ad/9ff1add9b0cd645ef2113be46689524b.jpg" alt="Sleep">
+      <h3>You're not able to sleep</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/2c/34/85/2c3485856f2ab9a8245a32caed128148.jpg" alt="Anxiety">
+      <h3>You get anxiety and anger</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/5f/18/1e/5f181e4db0ab9b349b05bc0a98712e83.jpg" alt="Textiles">
+      <h3>You feel not enough for me</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/aa/88/31/aa8831457a23ddea06305570d0bbea43.jpg" alt="Cosmetics">
+      <h3>You feel unmotivated</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/ab/4c/6a/ab4c6abbe227ecee6da8009879e22d42.jpg" alt="Groceries">
+      <h3>You don't feel like eating</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/9a/63/3a/9a633a8ba7e2c9c81c06bad280fb008c.jpg" alt="Furniture">
+      <h3>You feel unloved</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/45/9a/ac/459aac9d9c4a45b6d387d418120ee56c.jpg" alt="Toys">
+      <h3>You are sad</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/0a/ce/74/0ace7498e0894bb403d0e7f2c861547f.jpg" alt="Books">
+      <h3></h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/de/8f/bb/de8fbb8c8b5b73f021b7c72b2d007cab.jpg" alt="Clothing">
+      <h3>Clothing</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/2c/77/df/2c77df5696974b880db3ac6c9d609969.jpg" alt="Sports">
+      <h3>Sports</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/6a/2f/46/6a2f46e67edbcc46f6a495fa0935e5ae.jpg" alt="Furniture">
+      <h3>Furniture</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/54/8d/69/548d699bb953533320aa927ff6b9849e.jpg" alt="Furniture">
+      <h3>Furniture</h3>
+    </div>
+
+  </div>
+
+  <footer>
+    Never forget i love you the mostt <3
+  </footer>
+
+</body>
+</html>
