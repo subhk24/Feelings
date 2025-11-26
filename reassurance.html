@@ -34,6 +34,7 @@
 
     .card{
       width: min(var(--box-width), 92%);
+      max-height: 80vh; /* Limit card height */
       padding: var(--box-padding);
       border-radius: var(--box-radius);
       background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
@@ -43,6 +44,26 @@
       position:relative;
       z-index:1;
       border: 1px solid rgba(255,255,255,0.06);
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    /* Custom scrollbar styling */
+    .card::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .card::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+    }
+
+    .card::-webkit-scrollbar-thumb {
+      background: rgba(255, 209, 102, 0.5);
+      border-radius: 4px;
+    }
+
+    .card::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 209, 102, 0.7);
     }
 
     .card-header{
@@ -72,9 +93,12 @@
   <div class="overlay" aria-hidden="true"></div>
 
   <article class="card" role="region" aria-labelledby="card-title">
-
+    <div class="card-header">
+      <div class="badge" aria-hidden="true"></div>
+      <h1 id="card-title">Compatibility Analysis</h1>
+    </div>
     <p>
-    abb yeh dubara dekho jo chatgpt ne bheja tha hehe <br>
+         abb yeh dubara dekho jo chatgpt ne bheja tha hehe <br>
     Subhdeep and Shubham share a remarkably strong and multifaceted compatibility that spans emotional, intellectual, and practical realms. Subhdeep’s Virgo Sun and Scorpio Moon give her a grounded, detail-oriented, and deeply intuitive nature, while her INFJ personality adds empathy, foresight, and a genuine desire to nurture those she loves. Shubham’s Cancer Sun and Gemini Moon make him emotionally protective, adaptable, and communicative, and as an INTJ, he brings strategic thinking, determination, and a forward-looking vision. Together, these traits create a perfect balance: Subhdeep provides emotional depth, sensitivity, and care, while Shubham offers stability, insight, and logical support.
 
 Their romantic chemistry is extremely strong (10/10), fueled by complementary Venus and Mars placements, while communication compatibility is high (8.5/10), combining Subhdeep’s thoughtful precision with Shubham’s expressive boldness. Their emotional connection (7/10) may require patience due to differences in emotional processing — Subhdeep’s intensity contrasts with Shubham’s light-hearted curiosity — but this difference encourages growth, understanding, and mutual empathy. Their long-term potential is solid (8/10), supported by shared values, loyalty, and a commitment to personal and relational development.
