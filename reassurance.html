@@ -13,28 +13,44 @@
 
         body {
             font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #fff;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            line-height: 1.6;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrqfoa8tE64lSsuYxM1Y1kIWLmZHaVGSIyQ&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* Overlay for better text readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
         }
 
         .card {
-            background: rgba(30, 41, 59, 0.7);
+            background: rgba(30, 41, 59, 0.85);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
             max-width: 700px;
             width: 100%;
             max-height: 500px;
             overflow-y: auto;
             position: relative;
+            z-index: 1;
         }
 
         /* Custom scrollbar */
@@ -50,6 +66,10 @@
         .card::-webkit-scrollbar-thumb {
             background: linear-gradient(to bottom, #ffd166, #ff9e6d);
             border-radius: 10px;
+        }
+
+        .card::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #ffc145, #ff8a5c);
         }
 
         .card-header {
@@ -98,13 +118,19 @@
         }
 
         .score-item {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08);
             padding: 12px 20px;
             border-radius: 12px;
             flex: 1;
             min-width: 150px;
             text-align: center;
             border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .score-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .score-value {
@@ -123,9 +149,10 @@
             text-align: center;
             margin-top: 30px;
             padding: 20px;
-            background: rgba(255, 209, 102, 0.1);
+            background: rgba(255, 209, 102, 0.15);
             border-radius: 15px;
-            border: 1px solid rgba(255, 209, 102, 0.2);
+            border: 1px solid rgba(255, 209, 102, 0.3);
+            box-shadow: 0 5px 15px rgba(255, 209, 102, 0.2);
         }
 
         .overall-score .value {
@@ -149,12 +176,20 @@
                 max-height: 400px;
             }
             
+            .card-title {
+                font-size: 1.5rem;
+            }
+            
             .compatibility-scores {
                 flex-direction: column;
             }
             
             .score-item {
                 min-width: 100%;
+            }
+            
+            .overall-score .value {
+                font-size: 2rem;
             }
         }
     </style>
@@ -168,7 +203,7 @@
         
         <div class="content">
             <p>
-                <span class="highlight"> abb yeh dubara dekho jo chatgpt ne bheja tha hehe, Subhdeep and Shubham</span> share a remarkably strong and multifaceted compatibility that spans emotional, intellectual, and practical realms. Subhdeep's Virgo Sun and Scorpio Moon give her a grounded, detail-oriented, and deeply intuitive nature, while her INFJ personality adds empathy, foresight, and a genuine desire to nurture those she loves. Shubham's Cancer Sun and Gemini Moon make him emotionally protective, adaptable, and communicative, and as an INTJ, he brings strategic thinking, determination, and a forward-looking vision. Together, these traits create a perfect balance: Subhdeep provides emotional depth, sensitivity, and care, while Shubham offers stability, insight, and logical support.
+                <span class="highlight">abb yeh dubara dekho jo chatgpt ne bheja tha hehe, Subhdeep and Shubham</span> share a remarkably strong and multifaceted compatibility that spans emotional, intellectual, and practical realms. Subhdeep's Virgo Sun and Scorpio Moon give her a grounded, detail-oriented, and deeply intuitive nature, while her INFJ personality adds empathy, foresight, and a genuine desire to nurture those she loves. Shubham's Cancer Sun and Gemini Moon make him emotionally protective, adaptable, and communicative, and as an INTJ, he brings strategic thinking, determination, and a forward-looking vision. Together, these traits create a perfect balance: Subhdeep provides emotional depth, sensitivity, and care, while Shubham offers stability, insight, and logical support.
             </p>
             
             <div class="compatibility-scores">
